@@ -1,0 +1,428 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+section {
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-me { background-color: #f0f0f0; }
+#publications { background-color: #e0e0e0; }
+#experience { background-color: #d0d0d0; }
+#hobbies { background-color: #c0c0c0; }
+#gallery { background-color: #b0b0b0; }
+#contact { background-color: #a0a0a0; }
+
+
+/*Quote*/
+.quote{
+  margin-top:10px;
+  padding:10px;
+  font-size:20px;
+  font-family:cursive;
+}
+
+.quote p{
+  text-align: center;
+}
+/* About Me */
+
+#about-me {
+  height: 80vh;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.about-me-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.about-me-heading{
+  margin-left: 100px;
+  margin-top: 30px;
+  
+}
+.about-me-text  {
+  flex: 1;
+  max-width: 50%;
+  text-align: justify;
+}
+
+.about-me-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  height: auto;
+}
+.hamburger{
+  display:none;
+  font-size:30px;
+  cursor:pointer;
+}
+
+.publication-main{
+  margin-left: 100px;
+  margin-top: 30px;
+  
+}
+
+.publication-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+}
+
+.publication-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+  width: 30%;
+}
+
+.publication-card:hover {
+  transform: translateY(-5px); /* Applying translation on hover */
+}
+
+.publication-card img {
+  width: 100%;
+  height: 50vh;
+}
+
+.publication-info {
+  padding: 20px;
+}
+
+.publication-info h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.publication-info p {
+  margin-bottom: 20px;
+}
+
+.view-button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.view-button:hover {
+  background-color: #555;
+}
+
+/* EXPERIANCE */
+
+.experiance-main{
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.experience-container {
+  display: flex;
+  
+  gap: 60px;
+}
+
+.experience-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 42%;
+  transition: transform 0.3s; /* Adding transition */
+  margin-bottom: 20px;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px); /* Applying translation on hover */
+}
+
+.experience-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.experience-card p {
+  margin-bottom: 0;
+}
+/* 
+HOBIES */
+.main-container {
+  width: 100%;
+}
+.hobbies-main{
+  height:340px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+.hobbies-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.hobby-card {
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+  width:230px;
+  text-align: center;
+  transition: transform 0.3s;
+  
+}
+
+.hobby-card:hover {
+  transform: translateY(-5px);
+}
+
+.hobby-card h3 {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.hobby-card p {
+  margin-bottom: 0;
+}
+
+#gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.gallery-item {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 90%;
+  height: 400px;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+.gallary-main{
+  width: 100%;
+  height:540px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+/*Blog*/
+.blog-container {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  color: #333;
+  background-color: #969393;
+  padding:10px;
+  margin-bottom: 20px;
+}
+
+.blog-title {
+  color: #333;
+  font-size: 1.5em;
+  padding-left: 8px;
+  margin-left: 70px;
+  margin-top: 30px;
+  margin-bottom: 20px; 
+}
+
+.blog-info{
+  margin-left: 80px;
+  margin-bottom:70px;
+}
+.contact-container {
+  display: grid; 
+  grid-template-columns: 1fr auto; 
+  gap: 20px;
+  color: #333;
+  align-items: center;
+  margin-left: 80px;
+  margin-top: 10px;
+  margin-bottom:10px;
+}
+
+.contact-title {
+  grid-column: 1 / -1; 
+  color: #333;
+  font-size: 1.5em;
+  padding-left: 8px;
+  margin-bottom: 20px; 
+}
+
+.social-icon {
+  padding:5px;
+  margin-bottom :20px;
+}
+
+.social-icon img {
+  width: 50px; 
+  height: 50px; 
+  margin: 0; 
+}
+
+
+@media screen and (max-width: 500px) {
+  #navbar a{
+    display:none;
+    grid-auto-flow: row; 
+    justify-content: center; 
+}
+
+#navbar{
+ 
+    display: grid; 
+    grid-auto-flow: row; 
+    justify-content: end; 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+
+}
+.hamburger{
+  display:block;
+  cursor:pointer;
+  border:none;
+  
+  margin-left: 320px;
+}
+.hamburger .bar
+{
+  display:block;
+  width:25px;
+  height:3px;
+  margin:5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color:#333;
+}
+#navbar.active a{
+  display:block;
+}
+#about-me {
+  margin-left:-80px;
+  height: auto;
+  background-color: #f0f0f0;
+}
+.about-me-image {
+  margin-left: 0;
+  margin-top: 20px;
+}
+.about-me-text {
+  flex: 1;
+  max-width: 100%;
+}
+.about-me-content {
+  flex-direction: column;
+}
+
+
+   .publication-container, .experience-container, .hobbies-container {
+      flex-direction: column;
+  }
+
+   .publication-card, .experience-card, .hobby-card {
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .publication-card
+  {
+    width:100%;
+  }
+  .experience-card {
+      width: 90%;
+  }
+   .blog-title{
+    text-align:left;
+   }
+  .publication-card img, .experience-card img {
+      height: auto;
+  }
+
+  .hobbies-main, .gallary-main, .publication-main, .experiance-main {
+      height:auto;
+      margin-bottom:20px;
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+ .blog-container{
+  margin-left:-50px;
+ }
+  .gallery-grid {
+      grid-template-columns:1fr;
+  }
+
+  .gallery-item img {
+      height: 100%;
+  }
+  .contact-container {
+    margin-bottom: 80px;
+    margin-left: 30px;
+    grid-template-columns: 1fr; 
+}
+.social-icon{
+  
+  justify-content: center;
+  align-items:center;
+  flex-direction: row;
+}
+.social-icon img {
+  width: 40px; 
+  height: 40px; 
+  margin: 0; 
+}
+}
+
+
+
