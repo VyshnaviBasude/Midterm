@@ -405,6 +405,8 @@ HOBIES */
 
   .gallery-item img {
       height: 100%;
+      margin:auto;
+
   }
   .contact-container {
     margin-bottom: 80px;
