@@ -35,10 +35,10 @@ section {
 }
 
 #about-me { background-color: #f0f0f0; }
-#publications { background-color: #e0e0e0; }
-#experience { background-color: #d0d0d0; }
-#hobbies { background-color: #c0c0c0; }
-#gallery { background-color: #b0b0b0; }
+#publications { background-color: #e9edc9 }
+#experience { background-color: #fefae0 }
+#hobbies { background-color: #faedcd; }
+#gallery { background-color: #d5bdaf; }
 #contact { background-color: #a0a0a0; }
 
 
@@ -57,7 +57,7 @@ section {
 
 #about-me {
   height: 80vh;
-  background-color: #f0f0f0;
+  background-color:#ccd5ae;
   padding: 10px;
 }
 
@@ -93,6 +93,7 @@ section {
 .publication-main{
   margin-left: 100px;
   margin-top: 30px;
+  
   
 }
 
@@ -157,18 +158,20 @@ section {
 }
 
 .experience-container {
-  display: flex;
-  
-  gap: 60px;
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  width:100%;
+  gap: 10px;
 }
 
 .experience-card {
+  flex: 0 0 48%;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  padding: 20px;
-  width: 42%;
+  padding: 10px;
+  width: 80%;
   transition: transform 0.3s; /* Adding transition */
   margin-bottom: 20px;
 }
@@ -264,7 +267,7 @@ HOBIES */
   display: grid; 
   grid-template-columns: 1fr; 
   color: #333;
-  background-color: #969393;
+  background-color: #f1dbc5;
   padding:10px;
   margin-bottom: 20px;
 }
@@ -366,8 +369,10 @@ HOBIES */
   flex-direction: column;
 }
 
-
-   .publication-container, .experience-container, .hobbies-container {
+.experience-container{
+  grid-template-columns: 0.5fr;
+}
+   .publication-container,  .hobbies-container {
       flex-direction: column;
   }
 
@@ -381,7 +386,8 @@ HOBIES */
     width:100%;
   }
   .experience-card {
-      width: 90%;
+      width: 170%;
+  padding: 20px;
   }
    .blog-title{
     text-align:left;
